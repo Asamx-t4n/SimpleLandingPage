@@ -43,25 +43,25 @@ const App = () => {
 					<img className="Logo-Img" src="/Logo.jpg" alt="logo" />
 					<ul className={`NavMenu ${IsOpen ? "Desktop" : "Mobile"}`}>
 						<li>
-							<a href="">Home</a>
+							<a href="#Home">Home</a>
 						</li>
 						<li>
-							<a href="">About</a>
+							<a href="#About">About</a>
 						</li>
 						<li>
-							<a href="">Why We</a>
+							<a href="#Collection">Collection</a>
 						</li>
 						<li>
-							<a href="">Collection</a>
+							<a href="#WHYWE">Why We</a>
 						</li>
 						<li>
-							<a href="">Contact</a>
+							<a href="#Contact">Contact</a>
 						</li>
 					</ul>
 					<IoMenuOutline onClick={HandleMenu} className="Menu-Icon" />
 				</nav>
 			</div>
-			<div className="container-fluid Home">
+			<div id="Home" className="container-fluid Home">
 				<div className="container-fluid Img-Part1">
 					<div className="row">
 						<div className="col-md-6 col-sm-6 Part-One">
@@ -91,7 +91,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container-fluid About">
+			<div id="About" className="container-fluid About">
 				<div className="row">
 					<div className="col-6">
 						<img className="About-Img" src="/About.webp" alt="AboutImg" m />
@@ -110,7 +110,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container-fluid Collection">
+			<div id="Collection" className="container-fluid Collection">
 				<div className="row Collection-Col">
 					<div className="col-md-3 mt-1">
 						<Card
@@ -142,7 +142,7 @@ const App = () => {
 				</div>
 			</div>
 			<div>
-				<div className="conatiner-fluid Why-We">
+				<div id="WhyWE" className="conatiner-fluid Why-We">
 					<div className="row">
 						<div className="col-md-12 ">
 							{Data.map((item) => (
@@ -161,7 +161,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
-			<div className="container-fluid Footer">
+			<div id="Contact" className="container-fluid Footer">
 				<div className="row">
 					<div className="col-md-4">
 						<div className="FooterLogo-Cap">
